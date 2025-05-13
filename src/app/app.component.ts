@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 import { User } from './interfaces/user.interface';
 import { User as UserModel } from './models/user.model';
 import { Roles } from './enums/roles.enum';
 import { ExerciceHeritageComponent } from "./components/exercice-heritage/exercice-heritage.component";
+import { EventHandlingComponent } from "./components/event-handling/event-handling.component";
 
 
 interface User2 {
@@ -13,7 +13,7 @@ interface User2 {
 
 @Component({
   selector: 'app-root',
-  imports: [ExerciceHeritageComponent],
+  imports: [ExerciceHeritageComponent, EventHandlingComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
