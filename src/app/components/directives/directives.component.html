@@ -1,12 +1,19 @@
 <section>
   <h1>Directives</h1>
-
-  @for(){
+  @if (displayUsers) {
+  <button (click)="displayUsers = !displayUsers">afficher</button>
+  } @else {
+  <button (click)="displayUsers = !displayUsers">masquer</button>
+  @for(user of users ; track user.id) {
   <ul>
-    <li>name: </li>
-    <li>username: </li>
-    <li>email: </li>
+    <li>name: {{user.name}}</li>
+    <li>username:{{user.username}} </li>
+    <li>email: {{user.email}}</li>
   </ul>
   }
-
+  }
+  <p>Mes nombres</p>
+  @for(number of numbers; track $index; let i = $index) {
+  <p> index: {{i}} _ {{number}}</p>
+  }
 </section>

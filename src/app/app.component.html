@@ -1,3 +1,4 @@
+<!--
 <h1>{{title}}</h1>
 <p>{{ display() }}</p>
 <p>{{user3.fullName}}</p>
@@ -5,3 +6,17 @@
 
 <app-exercice-heritage />
 <app-event-handling />
+<app-directives />
+
+<!-- Passage de donnée de enfant vers parent
+<app-output (text)="passText($event)" (data)="passData($event)" />
+
+<p>{{childrenText}}</p>
+
+<h1>Ci-dessous, mon router outlet</h1>
+-->
+
+
+<p> Ma Navbar</p>
+<router-outlet></router-outlet>
+<p> Mon Footer</p>

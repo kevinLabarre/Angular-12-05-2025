@@ -18,6 +18,13 @@ export class DirectivesComponent {
 
   displayUsers: boolean = true
 
+  changeDisplay() {
+    this.displayUsers = !this.displayUsers
+  }
+
+  numbers = [1, 2, 3, 4, 5, 4, 3, 1, 2, 5, 3, 5, 4]
+
+
   users: User[] = [
     {
       id: 1,

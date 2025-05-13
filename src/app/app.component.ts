@@ -4,6 +4,9 @@ import { User as UserModel } from './models/user.model';
 import { Roles } from './enums/roles.enum';
 import { ExerciceHeritageComponent } from "./components/exercice-heritage/exercice-heritage.component";
 import { EventHandlingComponent } from "./components/event-handling/event-handling.component";
+import { DirectivesComponent } from "./components/directives/directives.component";
+import { OutputComponent } from "./components/output/output.component";
+import { RouterOutlet } from '@angular/router';
 
 
 interface User2 {
@@ -13,7 +16,7 @@ interface User2 {
 
 @Component({
   selector: 'app-root',
-  imports: [ExerciceHeritageComponent, EventHandlingComponent],
+  imports: [ExerciceHeritageComponent, EventHandlingComponent, DirectivesComponent, OutputComponent, RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
@@ -22,6 +25,8 @@ export class AppComponent {
   constructor() {
     console.log(this.user3.fullName)
   }
+
+  childrenText: string = "";
 
   myNumber: number | undefined;
 
@@ -77,14 +82,12 @@ export class AppComponent {
   }
 
 
+  passText(text: string) {
+    this.childrenText = text
+  }
+
+  passData(user: User) {
+    console.log(user)
+  }
+
 }
-
-
-
-// Portée var / let et const
-// Fonctions fléchées
-// Destructuration
-// Spread operator
-// array.prototype.includes, forEach et map
-// Object.fromEntries
-// class
