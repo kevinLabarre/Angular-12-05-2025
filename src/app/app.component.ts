@@ -3,6 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { User } from './interfaces/user.interface';
 import { User as UserModel } from './models/user.model';
 import { Roles } from './enums/roles.enum';
+import { ExerciceHeritageComponent } from "./components/exercice-heritage/exercice-heritage.component";
 
 
 interface User2 {
@@ -12,7 +13,7 @@ interface User2 {
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [ExerciceHeritageComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
@@ -25,7 +26,7 @@ export class AppComponent {
   myNumber: number | undefined;
 
   // Le ' ? ' veut dire que la variable peut être undefined
-  myVar?: string | number | null = "              ";
+  myVar?: string | number | null = "";
 
   myVar2: null = null
 

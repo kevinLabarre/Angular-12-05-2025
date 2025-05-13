@@ -21,7 +21,6 @@ export class User {
       this.createdAt = new Date();
 
     (this as any).logger();
-
   }
 
   get fullName(): string {
