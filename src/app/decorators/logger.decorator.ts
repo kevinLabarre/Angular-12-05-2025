@@ -7,3 +7,4 @@ export function Logger(target: any) {
   // Garde un historique des classes décorées
   // console.log(`Classe ${target.name} chargée à ${new Date()}`);
 }
+//
