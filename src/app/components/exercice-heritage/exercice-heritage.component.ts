@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { BankAccount } from '../../models/bank-account.model';
+import { BankAccount } from '../models/bank-account.model';
 import { ChildBankComponent } from "../child-bank/child-bank.component";
 
 @Component({

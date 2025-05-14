@@ -2,6 +2,14 @@ import { AccountType } from "../enums/account.enum";
 import { Roles } from "../enums/roles.enum";
 import { User } from "./user.model";
 
+
+// Ce qui peut rester dans les modèles
+// Méthodes utilitaires simples qui ne concernent que les données de l'objet lui-même
+// Getters / setters pour les propriétés
+// Transformations simples des données de l'objet
+// Validation interne des données
+
+
 export class BankAccount extends User {
   accountNumber: string;
   solde: number;

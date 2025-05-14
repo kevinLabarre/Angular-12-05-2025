@@ -1,4 +1,4 @@
-import { Logger } from "../decorators/logger.decorator";
+import { Logger } from "../../decorators/logger.decorator";
 import { Roles } from "../enums/roles.enum";
 
 @Logger

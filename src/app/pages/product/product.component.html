@@ -1,0 +1,35 @@
+<section>
+  <p>id: {{id}}</p>
+  <p>slug: {{slug}}</p>
+
+  <h2>Mes pokémons</h2>
+
+  @if(respPoke){
+  @for (pokemon of respPoke.results; track pokemon.name) {
+  <ul class="m-5 border">
+    <li>
+      {{pokemon.name}}
+    </li>
+    <li>
+      {{pokemon.url}}
+    </li>
+  </ul> }
+  }
+
+  <h2>Avec async / await</h2>
+  @if(respPoke){
+  @for (pokemon of pokemons; track pokemon.name) {
+  <ul class="m-5 border">
+    <li>
+      {{pokemon.name}}
+    </li>
+    <li>
+      {{pokemon.url}}
+    </li>
+  </ul> } }
+
+  <p></p>
+
+  <h1>Ci-dessous, mon router outlet</h1>
+  <router-outlet />
+</section>

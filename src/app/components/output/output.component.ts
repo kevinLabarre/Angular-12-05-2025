@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Output } from '@angular/core';
 import { emit } from 'process';
-import { User } from '../../interfaces/user.interface';
+import { User } from '../interfaces/user.interface';
 
 @Component({
   selector: 'app-output',

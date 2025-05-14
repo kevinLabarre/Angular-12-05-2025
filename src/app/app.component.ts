@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
-import { User } from './interfaces/user.interface';
-import { User as UserModel } from './models/user.model';
-import { Roles } from './enums/roles.enum';
+import { User } from './components/interfaces/user.interface';
+import { User as UserModel } from './components/models/user.model';
+import { Roles } from './components/enums/roles.enum';
 import { ExerciceHeritageComponent } from "./components/exercice-heritage/exercice-heritage.component";
 import { EventHandlingComponent } from "./components/event-handling/event-handling.component";
 import { DirectivesComponent } from "./components/directives/directives.component";
 import { OutputComponent } from "./components/output/output.component";
 import { RouterOutlet } from '@angular/router';
+import { NavbarComponent } from "./components/navbar/navbar.component";
 
 
 interface User2 {
@@ -16,7 +17,7 @@ interface User2 {
 
 @Component({
   selector: 'app-root',
-  imports: [ExerciceHeritageComponent, EventHandlingComponent, DirectivesComponent, OutputComponent, RouterOutlet],
+  imports: [ExerciceHeritageComponent, EventHandlingComponent, DirectivesComponent, OutputComponent, RouterOutlet, NavbarComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

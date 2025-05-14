@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { User } from '../../interfaces/user.interface';
-import { User as UserModel } from '../../models/user.model';
-import { Roles } from '../../enums/roles.enum';
+import { User } from '../interfaces/user.interface';
+import { User as UserModel } from '../models/user.model';
+import { Roles } from '../enums/roles.enum';
 
 @Component({
   selector: 'app-directives',
